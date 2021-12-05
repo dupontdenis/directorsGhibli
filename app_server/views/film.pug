@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+  .album.py-5.bg-light
+    .container
+      .row
+        .col-md-8
+          .card.mb-8.shadow-sm
+            h1= film.title
+            p= film.description
+            img(src=film.movie_banner, alt="")

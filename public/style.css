@@ -1,0 +1,21 @@
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+ 
+h1{
+  font-family: 'Lobster', cursive;
+}
+
+ol{
+  display : grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding :10px;
+}
+
+ol img{
+  width:100%;
+}
+ 
+body {
+  font-family: "Cabin", Arial, sans-serif;
+  color: #fff;
+  background-color: #108a93;
+}

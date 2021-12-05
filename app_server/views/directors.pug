@@ -1,0 +1,19 @@
+extends layout
+ 
+mixin menu_item(director)
+  li
+    a(href=`/directors/${director.name}`)=director.name
+    ul
+      each film in director.films
+        li=film.title
+            //a(href=`films/${submenuItem.title}`)=submenuItem.title
+
+
+mixin menu(directors)
+  ul
+    each director in directors
+      +menu_item(director)
+
+block content
+  h1 Directors films
+  +menu(directorsFilms)

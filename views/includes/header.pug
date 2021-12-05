@@ -1,0 +1,23 @@
+header
+  .collapse.bg-dark#navbarHeader
+    .container
+      .row
+        .col-sm-8.col-md-7.py-4
+          h4.text-white Hidden Content
+          p.text-muted The Studio Ghibli API catalogs the people, places, and things found in the worlds of Ghibli. It was created to help users discover resources, consume them via HTTP requests, and interact with them in whatever way makes sense. Navigation can be found on the left sidebar, and the right sidebar shows examples of returned objects for successful calls.
+        .col-sm-4.offset-md-1.py-4
+          h4.text-white Contact
+          ul.list-unstyled
+            li
+              a.text-white(href='#') Facebook
+            li
+              a.text-white(href='#') Twitter
+            li
+              a.text-white(href='#') Instagram
+  nav.navbar.navbar-dark.bg-dark.shadow-sm
+    .container.d-flex.justify-content-between
+      a.navbar-brand.d-flex.align-items-center
+        strong GET example
+      p.lead.text-muted Studio Ghibli API
+      button.navbar-toggler.collapsed&attributes({'data-toggle': 'collapse'}, {'data-target': '#navbarHeader'})
+        span.navbar-toggler-icon
